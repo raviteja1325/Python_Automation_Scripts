@@ -48,3 +48,25 @@ Fetch data from an HTTP API endpoint, extract user information from the JSON res
 4. From each item, extract the desired user field (e.g., login) and print or store it.
 
 
+
+# **File Operation Scripting with Python**
+This script shows how to read, modify, and write back the contents of a text file using Python’s built‑in file handling.
+
+🎯 **Goal**
+Safely update only specific lines/values in a file (e.g., config files, env files, log entries) while leaving all other lines unchanged.
+
+🔁 **Algorithm**
+
+1. Open the file in read mode using with open(...) to ensure it is closed automatically.
+
+2. Read all lines into a variable using .readlines() so you can process them in memory.
+
+3. Reopen the same file in write mode (or a new file) to overwrite with updated content.
+
+4. Loop through each line and:
+
+5. Use if conditions to detect lines that need to be edited.
+
+6. Modify only those lines.
+
+7. Write unchanged lines back as they are.
